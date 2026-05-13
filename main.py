@@ -78,7 +78,7 @@ class Bullet(Turtle):
         self.ht()
         self.player.bullets.remove(self)
 
-		
+
 '''
 Constructor( def __init__(self)):
 - player should be shaped like a turtle.
@@ -95,8 +95,7 @@ fire(self):
 - creates a Bullet object
 - appends the Bullet object to the players's bullet list
 '''
-class Player(Turtle):
-	pass
+
 
 '''
 Bullet() Class
@@ -125,3 +124,8 @@ playing_area()
 
 
 screen.mainloop()
+
+p1 = Player(-100, 0, "lightgreen",screen, "d", "a", 'w')
+p2 = Player(100,0,"blue",screen, "Right","Left", 'Up')
+p2.move()
+p1.move()
